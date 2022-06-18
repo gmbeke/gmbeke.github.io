@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root{
+    --primary-color: #003153;
+    --primary-color2: #FBC52F;
+    --primary-color3: #003153;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+.logo{
+    display: block;
+    font-size: 3.8rem;
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: 700;
+}
+.ul {
+    text-align: center;
+     right: 150px;
+     top: 200px;
+ }
+ .ul .li{
+     display: inline-block;
+     list-style: none;
+     margin: 0px 20px;
+     
+ } 
+ .ul .li a {
+     text-decoration: none;
+     color: #808080;
+     font-size: 1.1rem;
+     text-align: justify;
+     float: right;
+     font-weight: 100;
+     margin-top: 10px;
+ }
+ .ul .li.active a,
+ .ul .li a:hover {
+     color: goldenrod;
+     font-weight: 300;
+ }
+.name a {
+    color: goldenrod;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.word {
+    flex: 1;
+    padding-top: 100px;
+    overflow: hidden;
+    width: 100%;
+}
+.word .h1 {
+    font-size: 3rem;
+    color: goldenrod;
+
+}
+.word h4 {
+    padding: 20px 0px;
+    color: #808080;
+    font-size: 20px;
+    font-weight: 200;
+}
+.button {
+    outline: none;
+    border: transparent;
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 40px;
+    background: goldenrod;
+    color: #fff;
+}
+.button:hover {
+    border:2px solid goldenrod;
+    color: #daa520;
+    background: transparent;
+}
+.blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: rgba(211, 211, 211, 0.473);
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    animation: move 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+    }
+.blob2 {
+    position: absolute;
+    top: 70vh;
+    left: 20%;
+    fill: rgba(255, 174, 0, 0.17);
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    animation: move 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+.blob3 {
+    position: absolute;
+    top: 50vh;
+    right: 0%;
+    fill: rgba(211, 211, 211, 0.173);
+    width: 150px;
+    height: 100px;
+    z-index: -1;
+    animation: move 10s ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+
+.main{
+    padding: 0px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: calc(100vh - 110px);
+
+}
+.img-container {
+    flex: 1;
+    /* padding-top: 40px; */
+    overflow: hidden;
+    max-height: 293px;
+    display: flex;
+    --webkit-display: flex;
+    flex-direction: row;
+    
+    margin-top: 50px;
+    
+}
+.img-container .img{
+    width: 100%;
+    animation: scroll-img 30s linear infinite;
+
+}
+
+@keyframes scroll-img{
+    0%{
+        transform: translateX(0%);
+    }
+    24%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    49%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    74%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    99%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+
+.about {
+    background: goldenrod;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about .about-main{
+    display: flex;
+    padding: 40px 150px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-left {
+    flex: 1;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.main-left img{
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.main-right {
+    padding-top: 40px;
+    flex: 1;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.main-right div{
+    background: #ffffff19;
+    padding: 20px;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+.main-right div:hover{
+    background: #ffffff29;
+}
+.main-right h2{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.main-right p{
+    color: #fff;
+   font-weight: 300;
+   font-size: 1.05rem;
+   line-height: 1.7rem;
+}
+.page-header{
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+}
+.skills {
+    background: #fff;
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 150px;
+}
+.skills h1{
+    padding: 20px;
+    color: #808080;
+    text-align: center;
+}
+.skills-main{
+    border: 1px doted 
+}
+.skills-main1{
+    position: relative;
+}
+.blob4 svg, .blob5 svg, .blob6 svg{
+    width: 150px;
+    position: absolute;
+    margin: 100px;
+    left: 10%;
+}
+.blob5{
+    top: 150px
+        
+}
+.blob6{
+    top: 300px;
+    
+}
