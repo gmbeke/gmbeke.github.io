@@ -16,7 +16,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 100px;
-            background: var(--primary);
         }
 
         .nav .logo {
@@ -28,6 +27,36 @@
             margin: 0px 5px;
             padding: 10px 10px;
             border-radius: 10px 0px 5px 0px
+        }
+        .intro {
+            height: 60vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 100px;
+            gap: 20px;
+
+        }
+        .intro .left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .left h1 {
+            font-size: 2rem;
+            padding-bottom: 20px;
+        }
+        .left span {
+            font-size: 2rem;
+            font-family: "Satisfy";
+            color: var(--primary);
+        }
+
+        .intro .right{
+            flex: 1;
+        }
+        .right img {
+           height: 300px;
         }
     </style>
 
@@ -44,7 +73,15 @@
             </li>
         </ul>
     </nav>
-
+    <div class="intro">
+        <div class="left">
+            <h1>Hellow I'm <span>GMbeke</span> &#22356;</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consequuntur.</p>
+        </div>
+        <div class="right">
+            <img src="./assets/undraw_programming_re_kg9v.svg" alt="">
+        </div>
+    </div>
 </body>
 
 </html>
